@@ -1,0 +1,18 @@
+html{
+    font-size: 22px;
+}
+
+body{
+    background-color: rgb(17, 4, 27);
+    color: rgb(235, 244, 244);
+}   
+a{
+    color: chartreuse;
+}
+nav ul li a:hover{
+    color: brown;
+}
+nav li{
+    display: inline;
+    padding: 21px 10px;
+}

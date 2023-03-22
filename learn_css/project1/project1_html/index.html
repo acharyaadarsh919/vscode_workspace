@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="../project1_image/logo.jpg">
+    <link rel="stylesheet" href="../project1_css/main.css">
+</head>
+
+<body>
+    <!-- header area -->
+    <header>
+        <!-- Navigation area -->
+        <nav>
+            <ul>
+                <li class="ho">
+                    <a href="#">Home</a>
+                </li>
+                <li class="ho">
+                    <a href="#section1">Article</a>
+                </li>
+                <li class="ho">
+                    <a href="#form">Form</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main area -->
+    <main>
+        <!-- Article 1 area -->
+        <article id="section1">
+            <h1>Hi welcome to practice session.
+                <br> hope you have a nice day
+            </h1>
+            <p>
+            <h2>Topics for discussion for today:</h2>
+            </p>
+            <dl>
+                <dt>
+                    <h3> 1.Basics of html.</h3>
+                </dt>
+                <dd>In this article we will be learning about html tags, types of element Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Voluptatum delectus deserunt rerum eum natus eveniet quaerat vel quis
+                    hic.
+                    Facilis omnis laborum explicabo, molestias fuga cum deserunt quis officiis ducimus.
+                </dd>
+                <dt>
+                    <h3>2.Basics of css.</h3>
+                </dt>
+                <dd>
+                    In this article we will be learning about css tags, types of css Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Consequuntur nulla, iusto eius id quos perspiciatis impedit cum modi,
+                    cupiditate
+                    architecto voluptates eveniet quas aliquam, esse amet expedita temporibus laudantium iste nam
+                    voluptatibus
+                    eos inventore? Soluta nisi porro reiciendis sed ad. Sequi excepturi nulla quisquam inventore a ea
+                    possimus
+                    magni tenetur!
+                </dd>
+                <dt>
+                    <h3>3.Basics of Javascript.</h3>
+                </dt>
+                <dd>
+                    In this article we will be learning about javascript Lorem, ipsum dolor sit amet consectetur
+                    adipisicing
+                    elit. Qui dicta repellat, quisquam corrupti fuga quas sunt, laborum quidem optio reiciendis, animi
+                    modi
+                    officiis rem neque iste aut deleniti est sit itaque. Velit aliquam ducimus doloremque alias. Sint
+                    ipsum
+                    provident nemo placeat ratione exercitationem. Quasi fugiat tempora harum veritatis eum sapiente rem
+                    consectetur aperiam doloribus inventore? Illum quod vel aspernatur sapiente quo ullam impedit, nisi
+                    excepturi necessitatibus incidunt atque consequatur, aut quae alias. Accusamus, itaque. Ullam!
+                </dd>
+                <dt>
+                    <h3>4.Project</h3>
+                </dt>
+                <dd>
+                    In this article we will be doing a project using the above learnt stuff Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Illo tempora iure cum eveniet repellendus quo iste, harum nam est
+                    iusto?
+                </dd>
+            </dl>
+        </article>
+
+        <!-- ARticle 2 area for Form -->
+
+        <article id="form">
+            <fieldset>
+                <legend>
+                    <h2>
+                        Details
+                    </h2>
+                </legend>
+                <form action="https://httpin.org/get" method="get">
+                    <!-- first name -->
+                    <label for="FirstName">
+                        First Name:
+                    </label>
+                    <input type="text" name="Fname" id="FirstName" placeholder="Fname" autocomplete="on" autofocus required>
+                    <br>
+                    <!-- Last name -->
+                    <label for="lastName">
+                        Last Name:
+                    </label>
+                    <input type="text" name="Lname" id="lastName" placeholder="Lname" autocomplete="on" required>
+                    <br>
+                    <!-- password -->
+                    <label for="password">
+                        Password:
+                    </label>
+                    <input type="password" name="password" id="password" placeholder="password" required>
+                    <br>
+                    <!-- Phone number -->
+                    <label for="phone">
+                        Phone no:
+                    </label>
+                    <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    <br>
+                    <!-- decade -->
+                    <label for="decade">
+                        Favorite Decade:
+                    </label>
+                    <input type="number" name="decade" id="decade" value="1980" min="1950" max="2020" step="10">
+                    <br>
+                    <!-- Favorite coffee -->
+                    <label for="coffee">
+                        Favorite Coffee
+                    </label>
+                    <select name="coffee" id="coffee" multiple size="3">
+                        <optgroup label="Coffee">
+                            <option value="regular-coffee">
+                                Regular Coffee
+                            </option>
+                            <option value="iced-coffee">
+                                Iced coffee
+                            </option>
+                        </optgroup>
+                        <optgroup label="Tea">
+                            <option value="adrak tea" selected>
+                                Adrak Tea
+                            </option>
+                            <option value="green tea">
+                                Green tea
+                            </option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <!-- Data list -->
+                    <Label for="food">
+                        Favorite food
+                    </Label>
+                    <input type="text" name="food" id="food" list="food-list">
+                    <datalist id="food-list">
+                        <option value="chicken kabab"></option>
+                        <option value="samosa"></option>
+                        <option value="manchurian"></option>
+                        <option value="chicken 365"></option>
+                        <option value="Panner masala"></option>
+                    </datalist>
+                    <br>
+                    <fieldset>
+                        <legend>
+                            Gender
+                        </legend>
+                        <input type="radio" name="gender" id="male" >
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" checked>
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="other" disabled>
+                        <label for="other">others</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            Skills
+                        </legend>
+                        <input type="checkbox" name="skill" id="java" >
+                        <label for="java">java</label>
+                        <input type="checkbox" name="skill" id="python" checked>
+                        <label for="python">python</label>
+                        <input type="checkbox" name="skill" id="otherskill" disabled>
+                        <label for="otherskill">others</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Text Area</legend>
+                        <label for="message">Your message</label>
+                        <br>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                    </fieldset>
+                    <input type="submit" value="send details">
+                    <input type="reset">
+                    <button type="submit" formaction="https://httpin.org/post" formmethod="post">
+                        post
+                    </button>
+                </form>
+            </fieldset>
+        </article>
+
+    </main>
+
+    <!-- <fieldset>
+    <legend>hi there</legend>
+    <label for="message">Your message</label>
+    <br>
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+</fieldset> -->
+
+
+    <!-- footer area -->
+
+    <footer>
+        <p>
+            <a href="#">
+                Top
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>

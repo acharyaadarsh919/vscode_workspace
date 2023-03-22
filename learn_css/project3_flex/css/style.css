@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto;
+    border: 1px solid black;
+
+    /************************************************ 1 DISPLAY FLEX IS USED FOR FLEXBOX */
+    display: flex;
+    
+    /************************************************ 2 GAP BETWEEN 2 DIVS0 */
+    gap: 1rem;
+
+    /************************************************ 3 JUSTIFY CONTENT IS FOR HORIZONTAL ALIGNMENT */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+
+    /************************************************ 4 ALIGN ITEMS IS FOR VERTICAL ALLIGNMENT */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    align-items: center;
+
+    /************************************************ 5 FLEX DIRECTION IS FOR THE WAY THE DIVS APPEAR */
+    /* flex-direction: column; */
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+
+    /************************************************ 6 FLEX WRAP WRAPS THE DIVS INSIDE CONTAINER IF BROWSER IS RESIZED */
+    /* flex-wrap: wrap; */
+    flex-wrap: nowrap;
+
+    /************************************************ 7 FLEX FLOW IS THE COMBINATION OF FLEX DIRECTION AND FLEX WRAP */
+    /* flex-flow: row wrap; */
+
+    /************************************************ 8 ALIGN CONTENT IS USED FOR CONTENT ALIGNMENT , WHEN BROWSER IS RESIZED */
+    /* align-content: flex-start ; */
+    /* align-content: flex-end ; */
+    /* align-content: center ; */
+    /* align-content: space-around ; */
+    /* align-content: space-between; */
+    align-content: space-evenly ;
+}
+
+.box {
+    /* min-width: 100px; */
+    /* min-height: 100px; */
+    height: 100px;
+    background-color: black;
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* flex-basis: 250px; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    flex: 1 1 250px;
+}
+
+.box:nth-child(2){
+    /* flex-grow: 2; */
+    /* flex-shrink: 2; */
+
+    /* FLEX TAKES GROW SHRINK BASIS INPUT */
+    flex: 2 2 250px;
+
+    /* OREDER IS -VE THEN THE ELEMENT SITS AT BEGINING AND IF +VE SITS AT END */
+    order: 3;
+}

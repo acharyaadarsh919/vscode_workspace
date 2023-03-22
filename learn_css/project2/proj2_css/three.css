@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow: visible;
+    height: 250vh;
+}
+
+h1 {
+    margin: 6rem 5px 15px 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 0%;
+    background-color: black;
+    height: 5rem;
+    z-index: 1;
+    /* margin: 0 10px 5px 5px; */
+}
+
+nav ul {
+    height: 100%;
+
+}
+
+nav ul li {
+    display: inline-block;
+    /* padding: 31px 180px;
+    margin: 0 5px; */
+
+}
+
+nav ul li a,
+li a:visited {
+    color: aliceblue;
+    text-decoration: none;
+    display: inline-block;
+    padding: 31px 180px;
+}
+
+li a:hover,
+li a:focus {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.outer-container {
+    border: 3px dashed #000;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
+    position: relative;
+}
+
+.inner-container {
+    border: 2px solid #00f;
+    width: 40vw;
+    height: 50vh;
+    margin: 80px auto;
+
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    padding: 1rem;
+    
+}
+
+div p{
+    text-align: center;
+    padding: 75px auto ;
+}
+
+/* absolute depends on its nearest acestor whose position is relative */
+.absolute {
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* its always going to be relative to its parent container */
+.relative {
+    background-color: red;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+/* fixed will stay in its position even if we scroll through the page */
+.fixed {
+
+    background-color: green;
+    position: fixed;
+    /* top: 450px; */
+    /* top: 20px; */
+    bottom: 20px;
+    right: 20px;
+
+}
+
+/* sticky will make it stay while scrolling on the mentioned position until container runs out */
+.sticky {
+
+    background-color: #000;
+    position: sticky;
+    margin-left: 260px;
+
+    bottom: 2%;
+}

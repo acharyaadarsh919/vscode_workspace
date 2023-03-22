@@ -1,0 +1,271 @@
+/* <576 X-SMALL */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/*Reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* || Variables */
+
+:root{
+    /* color */
+    --BGCOLOR:#475569;
+    --DARK-COLOR: black;
+    /* do for other variables also */
+
+    /* font */
+    --FF:"Nunito", sans-serif;
+    --FS:1.5rem;
+
+    /* general */
+    --SHADOWS:0 6px 5px -5px var(--DARK-COLOR);
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.nowrap{
+    white-space: nowrap;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-size: var(--FS);
+    font-family: var(--FF);
+    min-height: 100vh;
+
+    background-color: var(--BGCOLOR);
+    background-image: radial-gradient(whitesmoke,var(--BGCOLOR));
+    display: flex;
+    flex-direction: column;
+
+}
+
+header, footer{
+    position: sticky;
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+header{
+    top: 0;
+}
+
+nav{
+    background-color: white;
+    padding: 0.5rem;
+    border-bottom: 2px solid black;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2px solid var(--DARK-COLOR) ;
+    box-shadow: var(--SHADOWS);
+    
+}
+
+nav a:link, nav a:visited{  /*nav a:any-link*/
+    color: black;
+    text-decoration: none;  
+}
+
+nav :is(a:hover, a:focus)        {
+    color: hsla(0,0%, 20%, 0.6);    
+}
+nav a:active {
+    color: red;
+  }
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+.card{
+    scroll-margin-top: 8rem;
+    min-width: min(100%,350px);
+    background-color: #cbd5e1;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card:target {
+    border: 2px solid rebeccapurple;
+  }
+.card figure{
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+.card img{
+    border: 5px double #333;
+    border-radius: 50%;
+}
+
+.card figcaption{
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+footer{
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer .click{
+    color: aliceblue;
+    padding-left:200px ;
+    text-decoration: none;
+}
+
+.click:any-link{
+    color: aliceblue;
+}
+
+:is(.click:hover, .click:focus) {
+    color:hsla(208, 100%, 97%, 0.505);
+}
+
+.click:active {
+    color: red;
+  }
+
+/* SMALL >= 576 */
+/* for screen with min-width 576 and above */
+
+@media screen and (min-width: 576px){
+ main{
+    justify-content: center;
+    flex-flow: row wrap;
+ }
+
+ .card{
+    width: min(100%,400px);
+ }
+
+ .card:last-child{
+    order: -1;
+ }
+}
+
+
+/* MEDIUM >= 768*/
+/* for screen with min-width 576 and above */
+
+@media screen and (min-width: 768px){
+    nav{
+        display: none;
+    }
+
+    .card{
+        width: min(100%, 325px);
+    }
+
+    .card figure{
+        flex-flow: column-reverse;
+        /* figcaption sits on top of img */
+    }
+
+    .card figcaption{
+        margin:0.1em 0 ;
+    }
+
+    .card p{
+        margin-top: 1rem;
+    }
+}
+
+
+/* LARGE >= 992*/
+/* for screen with min-width 576 and above */
+
+@media screen and (min-width: 992PX){
+    /* main{
+        justify-content: center;
+        flex-flow: row wrap;
+     } */
+    .card{
+        width: min(100%,400px);
+    }
+    .card:nth-child(2){
+        order: -1;
+    }
+}
+
+
+/* X-LARGE >= 1200*/
+/* for screen with min-width 576 and above */
+
+@media screen and (min-width: 1200px){
+    .card{
+        width: min(calc(33% - 1rem),500px);
+    }
+  
+}
+
+/* 2X-LARGE >= 1400*/
+/* for screen with min-width 576 and above */
+
+/* @media screen and (min-width: 1400px){
+    body{
+        background-color: skyblue;
+        background-image: radial-gradient(whitesmoke,skyblue);
+    }
+
+    nav{
+        display: none;
+    }
+} */
+
+
+/* MOBILE DEVICE LANDSCAPE */
+/* here max height and aspect ratio must be met to execute the below part */
+
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4){
+h1{
+    font-size: 1.5rem;
+}
+
+    /* nav is necessary here as we didnt hit min width ,when we hit max height*/
+    nav{
+        display: none;
+    }
+
+   
+     main{
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items:stretch;
+    }
+
+    .card{
+        width: min(calc(33% - 0.25rem), 200px);
+    }
+
+    .card figcaption, .card p{
+        font-size: 1.25rem;
+    }
+}

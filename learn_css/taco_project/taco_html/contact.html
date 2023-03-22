@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTS Contact Us</title>
+    <link rel="stylesheet" href="../taco_css/style.css">
+    <link rel="icon" href="../taco_images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>
+           Contact Us
+        </h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/#about">About <abbr title="The Little Taco Shop">LTS</abbr></a>
+                </li>
+                <li>
+                    <a href="#menu">Our Menu</a>
+                </li>
+                <li>
+                    <a href="./Hours.html">Store Hours</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <figure>
+            <img src="../taco_images/tacos and drinks.jpg" alt="Tacos" title="We love Tacos" width="310" height="163">
+            <figcaption>
+              Lts taco and drinks
+            </figcaption>
+        </figure>
+    </header>
+    <hr>
+    <main>
+        <h2>
+            Our contact form
+        </h2>
+
+        <article id="form">
+            <fieldset>
+                <legend>
+                    <h2>
+                        Details
+                    </h2>
+                </legend>
+                <form action="https://httpin.org/get" method="get">
+                    <!-- first name -->
+                    <label for="FirstName">
+                        First Name:
+                    </label>
+                    <input type="text" name="Fname" id="FirstName" placeholder="Fname" autocomplete="on" autofocus required>
+                    <br>
+                    <!-- Last name -->
+                    <label for="lastName">
+                        Last Name:
+                    </label>
+                    <input type="text" name="Lname" id="lastName" placeholder="Lname" autocomplete="on" required>
+                    <br>
+                    <!-- password -->
+                    <label for="password">
+                        Password:
+                    </label>
+                    <input type="password" name="password" id="password" placeholder="password" required>
+                    <br>
+                    <!-- Phone number -->
+                    <label for="phone">
+                        Phone no:
+                    </label>
+                    <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    <br>
+                    <!-- decade -->
+                    <label for="decade">
+                        Favorite Decade:
+                    </label>
+                    <input type="number" name="decade" id="decade" value="1980" min="1950" max="2020" step="10">
+                    <br>
+                    <!-- Favorite coffee -->
+                    <label for="coffee">
+                        Favorite Coffee
+                    </label>
+                    <select name="coffee" id="coffee" multiple size="3">
+                        <optgroup label="Coffee">
+                            <option value="regular-coffee">
+                                Regular Coffee
+                            </option>
+                            <option value="iced-coffee">
+                                Iced coffee
+                            </option>
+                        </optgroup>
+                        <optgroup label="Tea">
+                            <option value="adrak tea" selected>
+                                Adrak Tea
+                            </option>
+                            <option value="green tea">
+                                Green tea
+                            </option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <!-- Data list -->
+                    <Label for="food">
+                        Favorite food
+                    </Label>
+                    <input type="text" name="food" id="food" list="food-list">
+                    <datalist id="food-list">
+                        <option value="chicken kabab"></option>
+                        <option value="samosa"></option>
+                        <option value="manchurian"></option>
+                        <option value="chicken 365"></option>
+                        <option value="Panner masala"></option>
+                    </datalist>
+                    <br>
+                    <fieldset>
+                        <legend>
+                            Gender
+                        </legend>
+                        <input type="radio" name="gender" id="male" >
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" checked>
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="other" disabled>
+                        <label for="other">others</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            Skills
+                        </legend>
+                        <input type="checkbox" name="skill" id="java" >
+                        <label for="java">java</label>
+                        <input type="checkbox" name="skill" id="python" checked>
+                        <label for="python">python</label>
+                        <input type="checkbox" name="skill" id="otherskill" disabled>
+                        <label for="otherskill">others</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Text Area</legend>
+                        <label for="message">Your message</label>
+                        <br>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                    </fieldset>
+                    <input type="submit" value="send details">
+                    <input type="reset">
+                    <button type="submit" formaction="https://httpin.org/post" formmethod="post">
+                        post
+                    </button>
+                </form>
+            </fieldset>
+        </article>
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            copyright &copy; The Little Taco Shop
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&display=swap");
+
+/* || RESET */
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    width: 100%;
+    font-size: 16px;
+    background-color: #000;
+    align-items: center;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 250%;
+    color: #fff;
+}

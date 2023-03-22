@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px auto;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: brown;
+}
+
+nav {
+    background-color: black;
+    height: 5rem;
+
+    margin: 5px 5px;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    height: 100%;
+    padding-left: 0;
+
+}
+
+nav ul li {
+    display: inline-block;
+    /* padding: 31px 180px;
+    margin: 0 5px; */
+
+}
+
+li a,
+li a:visited {
+    color: aliceblue;
+    text-decoration: none;
+    display: inline-block;
+    padding: 31px 175px;
+}
+
+li a:hover,
+li a:focus {
+    background-color: whitesmoke;
+    color: black;
+}
+
+div {
+    height: 30vw;
+    width: 30vw;
+    background-color: black;
+    color: aliceblue;
+    margin-left: 15px;
+    padding: 177px 20px 20px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: bisque;
+    display: flow-root;
+}
+
+.left {
+    float: left;
+    margin-right: 10px;
+}
+
+p {
+    margin-left: 15px;
+}

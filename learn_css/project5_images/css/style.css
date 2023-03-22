@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+/* PART 1 */
+
+/* css reset */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    display:block;
+}
+
+body{
+    font-family: "Nunito", sans-serif;
+    min-height: 100vh;
+}
+
+.example{
+    margin-top: 1rem;
+    padding-left: 20px;
+    border: 1px solid red;
+}
+
+.example img{
+    this width is 25% of container size and hence it makes image resposive
+    width: 25%;  
+    height: auto;
+} */
+
+
+/* PART 2 */
+
+            /* begin reset */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    display:block;
+} */
+            /* end reset */
+
+            /* utility classes */
+/* .nowrap{
+    white-space: nowrap;
+}
+
+.offscreen{
+    position: absolute;
+    left: -10000px;
+} */
+            /* end utility classes */
+
+/* body{
+    font-family: "Nunito", sans-serif;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: rgba(255, 227, 190, 0.838);
+    background-image: url("../img/cover2.jpg");
+    background-repeat:repeat;        /*default*/
+    /* repeat-x */
+    /* repeat-y; */
+    /* no-repeat; */
+    /* background-size: cover; */
+    /* contain; */
+    /* background-position: top right;   */
+    /* x and y is there */
+/* } *//* */
+/* 
+.hero{
+    border-bottom: 2px solid black;
+    padding: 20px;
+    display:flex;
+    justify-content: flex-start ;
+    align-items:center;
+    gap: 70px;
+    background-color: hsla(0, 0%, 0%, 0.247);
+} */
+/* .h1{
+    font-size: 500%;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 4px 5px rgb(131, 50, 50);
+}
+
+.profile-pic{
+    width: 35%;
+    /* height: 40%; */
+/* }  */
+/* 
+.profile-pic img{
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 12px double rgb(245, 201, 99);
+    border-radius: 50%;
+} */
+
+/* part 3 */
+
+ body{ 
+    font-family: "Nunito", sans-serif;
+    min-height: 100vh;
+    background-color: aliceblue;
+    /* background-image: url("../img/bubbles1.png"),linear-gradient(to left,steelblue,white); */
+
+    /* since bubles is 1st and gradient is 2nd ..so repeat-y for bubbles and no repeat for the gradient */
+    /* background-repeat: repeat-y, no-repeat; */
+    /* background-position: right center; */
+
+    /* similarly 20% for bubbles and auto for gradient */
+    background: repeat-y right center url("../img/bubbles1.png"), no-repeat linear-gradient(to left,steelblue,white);
+    background-size:20% , auto
+}
+
+.clip{
+    font-weight: 800;
+    font-size: 18rem;
+    text-align: center;
+    background-image: url("../img/cover-photo.jpg");
+    background-size: 100%;
+    text-transform: uppercase;
+    /* for firefox directly background clip */
+    background-clip:text;
+    /* other browser need to puse prefix -webkit */
+    -webkit-background-clip: text ;
+    color: hsla(0, 0%, 0%, 0.205);
+    /* color: transparent; */
+
+}

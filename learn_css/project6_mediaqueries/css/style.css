@@ -1,0 +1,150 @@
+/* <576 X-SMALL */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/*Reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-size: 1rem;
+    font-family: "nunito", sans-serif;
+    min-height: 100vh;
+
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke,#475569);
+    display: flex;
+    flex-direction: column;
+
+}
+
+header, nav, main, footer{
+    display: grid;
+    place-content: center;
+    /* to give 100% width */
+    grid-template-columns: 100%;
+
+    text-align: center;
+}
+
+header, footer{
+    position: sticky;
+    background-color: blueviolet;
+    color: white;
+}
+
+header{
+    top: 0;
+}
+
+nav{
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    border-bottom: 2px solid black;
+}
+
+main{
+    flex-grow: 1;
+}
+
+footer{
+    bottom: 0;
+}
+
+/* SMALL >= 576 */
+/* for screen with min-width 576 and above */
+
+@media screen and (min-width: 576px){
+    body{
+        background-color: green;
+        background-image: radial-gradient(whitesmoke,green);
+    }
+
+    nav{
+        display: none;
+    }
+}
+
+
+/* MEDIUM >= 768*/
+/* for screen with min-width 576 and above */
+
+@media screen and (min-width: 768px){
+    body{
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke,gold);
+    }
+
+    nav{
+        display: none;
+    }
+}
+
+
+/* LARGE >= 992*/
+/* for screen with min-width 576 and above */
+
+@media screen and (min-width: 992PX){
+    body{
+        background-color: firebrick;
+        background-image: radial-gradient(whitesmoke,firebrick);
+    }
+
+    nav{
+        display: none;
+    }
+}
+
+
+/* X-LARGE >= 1200*/
+/* for screen with min-width 576 and above */
+
+@media screen and (min-width: 1200px){
+    body{
+        background-color: rosybrown;
+        background-image: radial-gradient(whitesmoke,rosybrown);
+    }
+
+    nav{
+        display: none;
+    }
+}
+
+/* 2X-LARGE >= 1400*/
+/* for screen with min-width 576 and above */
+
+@media screen and (min-width: 1400px){
+    body{
+        background-color: skyblue;
+        background-image: radial-gradient(whitesmoke,skyblue);
+    }
+
+    nav{
+        display: none;
+    }
+}
+
+
+/* MOBILE DEVICE LANDSCAPE */
+/* here max height and aspect ratio must be met to execute the below part */
+
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4){
+    body{
+        background-color: dodgerblue;
+        background-image: radial-gradient(whitesmoke,skyblue);
+    }
+
+    /* nav is necessary here as we didnt hit min width ,when we hit max height*/
+    nav{
+        display: none;
+    }
+
+    h1 ,h2{
+        font-size: 1.5rem;
+    }
+}

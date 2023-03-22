@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Prosto+One&family=Sevillana&display=swap');
+:root{
+    /* color */
+--CLR-TEXT: #3d3d3d;
+--CLR-PRIMARY:#13b419;
+--CLR-ACCENT: #713b6b;
+--CLR-HOVER:orange;
+
+/* fonts */
+--FF-TITLE: "Prosto One",cursive;
+--FF-SERIF:"Nunito",serif;
+--FF-LOGO: "Sevillana",cursive;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: var(--FF-SERIF);
+    color: var(--CLR-TEXT);
+    font-size: 1.125rem;
+}
+
+body{
+    margin: 0;
+    text-align: center;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    width: 324px;
+    height: auto;
+}
+
+section{
+    padding: 3em 1em;
+}
+
+/* typography */
+h1,h2,h3,h4,p{
+    margin: 0;
+}
+h2, h3{
+    font-family: var(--FF-TITLE);
+    line-height: 0.9;
+    letter-spacing: 2px;
+}
+
+h2{
+    font-size: 2.18rem;
+}
+
+p{
+    margin-bottom: .75em;
+}
+
+.section-title-small{
+    font-size: 2rem;
+}
+.section-title-small small{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    display: block;
+}
+
+.text-primary{
+    color: var(--CLR-PRIMARY);
+}
+
+.logo{
+    font-family: var(--FF-LOGO);
+    text-align: center;
+}
+
+.logo a{
+    color: black;
+    text-decoration: none;
+}
+/* navigation */
+
+header{
+    padding: 1em 0 1.2em;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    margin-top: 0.5em;
+}
+
+nav a{
+    display: inline-block;
+    padding: .5em;
+    color: var(--CLR-PRIMARY);
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus{
+    color: var(--CLR-ACCENT);
+    text-decoration: underline;
+    border: 2px solid var(--CLR-HOVER);
+}
+
+/* buttons */
+.btn-group{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.btn{
+    padding: .75em 2.5em;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: .5em 0;
+    border-radius: .35em;
+}
+
+/* .btn + .btn{
+    margin-left: .5em;
+} */
+.btn-primary{
+    background:var(--CLR-PRIMARY) ;
+}
+.btn-primary:hover,
+.btn-primary:focus{
+    background:var(--CLR-ACCENT) ;
+}
+
+.btn-accent{
+    background: var(--CLR-ACCENT);
+}
+/* homepage style */
+
+.hero{
+    background-color: #444;
+    background-image: url(../img/hippiechickNoms.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: white;
+    text-align: center;
+    padding: 10vh 1em;
+}
+
+.about-us{
+    background: var(--CLR-ACCENT);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 0;
+}
+
+.about-us__intro{
+    background-color: #444;
+    background-image: url(../img/gronola.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding: 1.5em 1em 1em;
+}
+
+.about-us__body{
+    padding: 1em 1em 1.5em;
+}
+
+.order-online{
+    background: #f0f0f0;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+}
+
+.product{
+    /* background: #f0f0f0; */
+    /* padding: 1em;     */
+    border-radius: .35em;
+    overflow: hidden;
+    box-shadow: 0 0 1em rgba(0, 0, 0, .2);
+}
+
+.product__content{
+    padding: 1.5em;
+}
+
+.product__title{
+    color: var(--CLR-PRIMARY);
+    font-size: 1.5rem;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.fineprint{
+    font-size: .75rem;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+footer{
+    background: #333;
+    padding: 3em 1em;
+    color: white;
+    padding: 0rem;
+}
+
+.footer-nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+
+.footer-nav a{
+    color: inherit;
+    text-decoration: underline;
+}

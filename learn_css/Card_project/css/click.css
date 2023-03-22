@@ -1,0 +1,206 @@
+/* <576 X-SMALL */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/*Reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* || Variables */
+
+:root{
+    /* color */
+    --BGCOLOR:#475569;
+    --DARK-COLOR: black;
+    /* do for other variables also */
+
+    /* font */
+    --FF:"Nunito", sans-serif;
+    --FS:1.5rem;
+
+    /* general */
+    --SHADOWS:0 6px 5px -5px var(--DARK-COLOR);
+
+    /* square */
+    --SQUARE-BGCOLOR:papayawhip;
+    --SQUARE-SIZE: max(150px , 20vw);
+    --BORDERS: 2px solid black;
+}
+
+/* dark mode */
+@media(prefers-color-scheme:dark){
+    :root{
+        --BGCOLOR: black;
+        --SQUARE-BGCOLOR:rgb(206, 172, 206);
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-size: var(--FS);
+    font-family: var(--FF);
+    min-height: 100vh;
+
+    background-color: var(--BGCOLOR);
+    background-image: radial-gradient(whitesmoke,var(--BGCOLOR));
+    display: flex;
+    flex-direction: column;
+
+}
+
+header, footer{
+    position: sticky;
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+header{
+    top: 0;
+}
+
+nav{
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    font-weight: bolder;
+    border-bottom: 2px solid var(--DARK-COLOR) ;
+    box-shadow: var(--SHADOWS);
+    
+}
+
+main{
+    flex-grow: 1;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: min(4vw, 15px);
+}
+
+.div{
+    background-color: var(--SQUARE-BGCOLOR);
+    width: var(--SQUARE-SIZE);
+    height: var(--SQUARE-SIZE);
+    border: var(--BORDERS);
+    border-radius: 15px;
+    display: grid;
+    place-content: center;
+    font-size: 3rem;
+    box-shadow: var(--SHADOWS);
+}
+
+.class-highlight{
+    --SQUARE-BGCOLOR: cornflowerblue;
+}
+
+footer{
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer .click{
+    color: aliceblue;
+    padding-left:200px ;
+    text-decoration: none;
+}
+
+.click:any-link{
+    color: aliceblue;
+}
+
+:is(.click:hover, .click:focus) {
+    color:hsla(208, 100%, 97%, 0.505);
+}
+
+.click:active {
+    color: red;
+  }
+
+/* SMALL >= 576 */
+/* for screen with min-width 576 and above */
+
+@media screen and (min-width: 576px){
+ main{
+    justify-content: center;
+    flex-flow: row wrap;
+ }
+
+}
+
+
+/* MEDIUM >= 768*/
+/* for screen with min-width 576 and above */
+
+@media screen and (min-width: 768px){
+    nav{
+        display: none;
+    }
+}
+
+
+/* LARGE >= 992*/
+/* for screen with min-width 576 and above */
+
+@media screen and (min-width: 992PX){
+    main{
+        justify-content: center;
+        flex-flow: row wrap;
+     }
+    
+}
+
+
+/* X-LARGE >= 1200*/
+/* for screen with min-width 576 and above */
+
+@media screen and (min-width: 1200px){
+  
+}
+
+/* 2X-LARGE >= 1400*/
+/* for screen with min-width 576 and above */
+
+/* @media screen and (min-width: 1400px){
+    body{
+        background-color: skyblue;
+        background-image: radial-gradient(whitesmoke,skyblue);
+    }
+
+    nav{
+        display: none;
+    }
+} */
+
+
+/* MOBILE DEVICE LANDSCAPE */
+/* here max height and aspect ratio must be met to execute the below part */
+
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4){
+h1{
+    font-size: 1.5rem;
+}
+
+    /* nav is necessary here as we didnt hit min width ,when we hit max height*/
+    nav{
+        display: none;
+    }
+
+   
+     main{
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items:stretch;
+    }
+}
